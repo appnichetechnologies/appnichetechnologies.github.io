@@ -13,7 +13,7 @@ export default function Navbar() {
 			</div>
 
 			<div id="menu">
-				<span>Project's</span>
+				<span>Projects</span>
 				<span>Blog</span>
 				<span>About</span>
 				<span>More...</span>
