@@ -140,7 +140,7 @@ export default function HomePage() {
 				<div className="max-w-4xl mx-auto text-center">
 					<h2 className="text-4xl font-bold mb-6">Ready to Transform Your Business?</h2>
 					<p className="text-xl mb-8 opacity-90">
-						Let's discuss how we can help you achieve your digital goals with our innovative solutions.
+						Let&apos;s discuss how we can help you achieve your digital goals with our innovative solutions.
 					</p>
 					<div className="flex justify-center gap-4">
 						<button className="px-8 py-3 bg-white text-blue-500 rounded-lg hover:bg-gray-100 transition-colors font-medium">
