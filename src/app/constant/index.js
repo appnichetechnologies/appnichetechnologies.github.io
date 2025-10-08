@@ -162,7 +162,7 @@ export const projectsData = [
     title: "Watches",
     description:
       "Get the best watches for men and women at affordable prices. Our watches are stylish, durable, and come with a variety of features such as chronograph, date display, and water resistance. We have a wide range of watches to choose from, including leather strap, metal strap, and NATO strap. Our watches are suitable for all occasions, whether you're looking for a casual watch or a formal watch.",
-    site: "https://shashanksangawar.github.io/Watches/",
+    site: "https://sahaskamble.github.io/Watches/",
   },
   {
     id: 2,
@@ -170,7 +170,7 @@ export const projectsData = [
     title: "Wooden Furniture",
     description:
       "Get the best wooden furniture for your home at affordable prices. Our furniture is made of high-quality wood and is durable. We have a wide range of furniture to choose from, including beds, sofas, dining tables, chairs, and more. Our furniture is suitable for all types of homes, whether you're looking for modern, traditional, or rustic furniture.",
-    site: "https://shashanksangawar.github.io/Furnitures/",
+    site: "https://sahaskamble.github.io/Furnitures/",
   },
   {
     id: 3,
@@ -178,7 +178,7 @@ export const projectsData = [
     title: "eCommerce Website",
     description:
       "Get the best shopping experience with our eCommerce website. Our website is user-friendly and offers a wide range of products, including clothing, electronics, home appliances, and more. We have a variety of payment options, including credit card, PayPal, and bank transfer. Our website is also mobile-friendly, so you can shop on the go.",
-    site: " https://shashanksangawar.github.io/Daily_wear/",
+    site: " https://sahaskamble.github.io/Daily_wear/",
   },
   {
     id: 4,
@@ -186,7 +186,7 @@ export const projectsData = [
     title: "Gym Nation",
     description:
       "Get fit with our gym. Our gym is fully equipped with all the latest equipment, including treadmills, elliptical machines, free weights, and more. We have a variety of exercise classes, including yoga, Pilates, spinning, and more. Our trainers are experienced and can help you achieve your fitness goals. We also have a nutrition plan to help you stay healthy and fit.",
-    site: "https://shashanksangawar.github.io/Gym-Nation/",
+    site: "https://sahaskamble.github.io/Gym-Nation/",
   },
   {
     id: 5,
@@ -194,7 +194,7 @@ export const projectsData = [
     title: "Reveal The Beauty Of Skin",
     description:
       "Get the best beauty products for your skin at affordable prices. Our products are made of natural ingredients and are suitable for all skin types. We have a wide range of products, including skincare, haircare, makeup, and more. Our products are free of harsh chemicals and are cruelty-free. We also have a blog section where we share tips and tricks on how to take care of your skin.",
-    site: "https://shashanksangawar.github.io/Cosmetics/",
+    site: "https://sahaskamble.github.io/Cosmetics/",
   },
 ];
 
