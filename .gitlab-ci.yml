@@ -1,0 +1,67 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_TLS_CERTDIR: ""
+  IMAGE_NAME: "appniche"
+  IMAGE_TAG: "latest"
+ 
+stages:
+  - sample
+  - build
+  - test
+  - depoly
+
+sample_job:
+  stage: sample
+  script:
+    - echo "sample job"
+  tags:
+    - project
+
+build_and_push_job:
+  stage: build
+  script:
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+    - echo "$DOCKERHUB_PASS" | docker login -u "$DOCKERHUB_USER" --password-stdin
+    - docker image tag $IMAGE_NAME:$IMAGE_TAG $DOCKERHUB_USER/$IMAGE_NAME:$IMAGE_TAG
+    - docker push $DOCKERHUB_USER/$IMAGE_NAME
+  tags:
+    - project
+  artifacts:
+    paths:
+      - build.log
+    expire_in: 7 days
+    when: always
+
+
+test_job:
+  stage: test
+  script:
+    - echo "Testing..."
+  tags:
+    - project
+
+depoly_job:
+  stage: depoly
+  script:
+    - docker pull $DOCKERHUB_USER/$IMAGE_NAME:$IMAGE_TAG
+    - docker compose up -d
+  tags:
+    - project
+  artifacts:
+    paths:
+      - depoly.log
+    expire_in: 7 days
+    when: always
+
+
+stop_job:
+  stage: depoly
+  script:
+    - docker compose down
+  when: manual # only run when manually triggered
+  tags:
+    - project
